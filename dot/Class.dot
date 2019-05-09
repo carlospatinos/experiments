@@ -1,0 +1,8 @@
+graph classsdiagram {
+Class.A("MyClass")
+("attr1: int", "attr2: int")
+("method1(): void",
+"method2(): void");
+A.nw = (0, 0); % optional, implied
+drawObject(A);
+}

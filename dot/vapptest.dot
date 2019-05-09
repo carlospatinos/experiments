@@ -1,0 +1,8 @@
+#dot vapptest.dot -Tpng -o hello.png
+digraph deploymentDiagram{ 
+	node[shape=Mrecord]
+	sc_1_cm [label="{<f0> SC-1 - CMServ|<f1> NAME RUNTIME-NAME ENABLED STATUS \nPlatformIntegrationBridge-ear-2.0.6.ear PlatformIntegrationBridge-ear-2.0.6.ear true OK  }"];
+	sc_1_mscm [label="{<f0> SC-1 - MSCM|<f1> sc_1_mscm_details }"];
+	sc_2_cm [label="{<f0> SC-2 - CMServ|<f1> sc_2_cm_details }"];
+	sc_2_mscm [label="{<f0> SC-2 - MSCM|<f1> sc_2_mscm_details }"];
+}

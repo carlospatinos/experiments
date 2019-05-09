@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Raphaël JS Map</title>
+<style type="text/css">
+
+.legend {
+float: right;
+width: 40%;
+left: 60%;
+position:fixed;
+}
+
+div p{
+font-size:xx-large;
+}
+
+
+.map{
+float: left;
+width: 700px;
+height: 1200px;
+background-image: url(Map2.PNG);
+background-size: 750px 1035px;
+background-repeat: no-repeat;
+}
+
+.container{
+width: 100%;
+}
+
+.exitPoints:hover{color: red;}
+.meetingRooms:hover{color: red;}
+.breakoutRooms:hover{color: red;}
+.quietRooms:hover{color: red;}
+.desktops1:hover{color: red;}
+.desktops2:hover{color: red;}
+.desktops3:hover{color: red;}
+.desktops4:hover{color: red;}
+.desktops5:hover{color: red;}
+.desktops6:hover{color: red;}
+.desktops7:hover{color: red;}
+.desktops8:hover{color: red;}
+
+
+</style>
+</head>
+<body>
+	<big><big><big><big><big><big><big><big>carloscompany Athlone - Zone 6 </big></big></big></big></big></big></big></big>
+<h3 id="region-name">Description. Please put your mouse over some zone.</h3>
+
+<div id='container' class 'container'>
+	<div id="legend" class="legend">
+	<div id="exitPoints" class="exitPoints" onmouseover="highlightExitPoints()" onmouseout="hoverOffExitPoints()"><p>exitPoints</p></div>
+	<div id="meetingRooms" class = "meetingRooms" onmouseover="highlightMeetingRooms()" onmouseout="hoverOffMeetingRooms()"><p>meetingRooms</p></div>
+	<div id="breakoutRooms" class = "breakoutRooms" onmouseover="highlightBreakoutRooms()" onmouseout="hoverOffBreakoutRooms()"><p>breakoutRooms</p></div>
+	<div id="quietRooms" class = "quietRooms" onmouseover="highlightQuietRooms()" onmouseout="hoverOffQuietRooms()"><p>quietRooms</p></div>
+	<div id="desktops1" class = "desktops1" onmouseover="highlightDesktops1()" onmouseout="hoverOffDesktops1()"><p>desktops1</p></div>
+	<div id="desktops2" class = "desktops2" onmouseover="highlightDesktops2()" onmouseout="hoverOffDesktops2()"><p>desktops2</p></div>
+	<div id="desktops3" class = "desktops3" onmouseover="highlightDesktops3()" onmouseout="hoverOffDesktops3()"><p>desktops3</p></div>
+	<div id="desktops4" class = "desktops4" onmouseover="highlightDesktops4()" onmouseout="hoverOffDesktops4()"><p>desktops4</p></div>
+	<div id="desktops5" class = "desktops5" onmouseover="highlightDesktops5()" onmouseout="hoverOffDesktops5()"><p>desktops5</p></div>
+	<div id="desktops6" class = "desktops6" onmouseover="highlightDesktops6()" onmouseout="hoverOffDesktops6()"><p>desktops6</p></div>
+	<div id="desktops7" class = "desktops7" onmouseover="highlightDesktops7()" onmouseout="hoverOffDesktops7()"><p>desktops7</p></div>
+	<div id="desktops8" class = "desktops8" onmouseover="highlightDesktops8()" onmouseout="hoverOffDesktops8()"><p>desktops8</p></div>
+</div>
+<div id="map" class="map">
+<!-- Raphaël JS Map Here -->
+</div>
+</div>
+<div id="status"></div>
+
+<script src="raphael-min.js"></script>
+<script src="maps.js"></script>
+</body>
+</html>

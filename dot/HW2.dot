@@ -1,0 +1,8 @@
+graph hello2 {
+
+// Hello World with nice colors and big fonts
+
+Node1 [label="Hello, World!", color=Blue, fontcolor=Red,
+    fontsize=24, shape=box]
+ 
+}

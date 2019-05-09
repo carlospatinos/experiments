@@ -1,0 +1,16 @@
+graph { 
+	splines=line; 
+	subgraph cluster_0 { 
+		label="SC-1"; 
+		a; b; c 
+	} subgraph cluster_1 { 
+		label="SC-2"; 
+		d; e; 
+	}
+	a -- e;
+	
+	b -- d; 
+	
+	c -- d; 
+	
+}
